@@ -2,10 +2,45 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Game Time</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" style="text/css" href="./CSS/styles.css"/>
+  <title>Bluecifer's Revenge</title>
 </head>
 <body>
-  <h1>Yo soy una banana!</h1>
-   <div class = "banana"> </div><script src="main.bundle.js"></script>
+  <header>
+    <h1>Bluecifer's <span>Revenge</span></h1>
+    <p>Click on the game screen to start game. Press the spacebar to help Bluecifer avoid the airplanes and keep from hitting the ground so he can return safely home to DIA.</p>
+    <p>(Press the Enter key to turn off the music.)</p>
+  </header>
+
+    <section id="start-game">
+      <article id="start-game-text">
+        <h2>Start Game</h2>
+        <p>Click on the game screen to start a new game.</p>
+      </article>
+    </section>
+
+    <section id="game-over">
+      <article id="game-over-text">
+        <h2>Game Over</h2>
+        <p>Click on the game screen to start a new game.</p>
+      </article>
+    </section>
+
+    <section id="you-win">
+      <h2 id="you-win-text">You win! (Click to start a new game.)</h2>
+    </section>
+
+    <section id="game-wrapper">
+      <h3 id="game-score">000000</h3>
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </section>
+
+    <section>
+      <h4 id="final-score-display"></h4>
+    </section>
+
+  <script src="main.bundle.js"></script>
 </body>
 </html>
